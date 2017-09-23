@@ -10,6 +10,7 @@ namespace InvestorAPI.Controllers
     [Route("api/[controller]")]
     public class InvestorController : Controller
     {
+        //Interface may not be needed for DI
         private readonly IInvestorRepository _investorRepository;
 
         public InvestorController(IInvestorRepository investorRepository)
